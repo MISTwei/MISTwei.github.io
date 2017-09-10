@@ -83,8 +83,19 @@ button:focus { outline: none; }
 .tm-icon { 
 	color: white;
 	margin-bottom: 30px;
+	animation: all 1s infinite linear;
 }
-
+@keyframes all{
+	0%{
+		transform: scale(1) rotate(0deg);
+	}
+	50%{
+		transform: scale(1.1) rotate(0deg);
+	}
+	100%{
+transform: scale(1) rotate(0deg);
+	}
+}
 .tm-site-name { margin-bottom: 35px; }
 
 .cd-hero-slider .tm-site-name { 
@@ -227,7 +238,8 @@ button:focus { outline: none; }
 
 .tm-contact-page {
 	margin: 0 auto;
-	max-width: 750px;
+	/* max-width: 1200px; */
+	text-align: initial;
 }
 
 .form-control,

@@ -8,8 +8,13 @@ Primary style
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
+*{
+  cursor: url("../img/5.png"),auto;
+}
+html { 
 
-html { font-size: 62.5%; }
+  font-size: 62.5%; 
+}
 
 body {
   font-size: 1.6rem;
@@ -21,6 +26,7 @@ body {
 a {
   color: #d44457;
   text-decoration: none;
+  cursor: url("../img/5.png "),auto;
 }
 
 img { max-width: 100%; }
@@ -221,14 +227,23 @@ Single slide style
   background-image: url("../img/bg-03.jpg");
 }
 .cd-hero-slider li:nth-of-type(4) {
-  background-image: url("../img/bg-02.jpg");
+  background-image: url("../img/a.jpg");
   /*background-image: url("../assets/video-replace-mobile.jpg");*/
 }
 .cd-hero-slider li:nth-of-type(4) .box1 h1{
-  font-size: 30px;
-  color: hotpink;
+  font-size: 66px !important;
   text-align: center;
-  margin-top: 360px;
+  padding-top: 388px;
+  float: right;
+padding-right: 268px;
+  color: hotpink;
+  /* margin-top: 360px; */
+}
+.cd-hero-slider li:nth-of-type(4) .box1 div img{
+  height: 354px;
+  position: absolute;
+ top: 107px;
+ left: 44px;
 }
 .cd-hero-slider li:nth-of-type(5) {
   background-color: rgba(227, 193, 30, 0.83);

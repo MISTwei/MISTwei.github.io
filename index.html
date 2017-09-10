@@ -62,10 +62,10 @@
                                 <a class="nav-link" href="#0" data-no="2">去他妈的人生理想</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#0" data-no="3">好朋友集合</a>
+                                <a class="nav-link" href="#0" data-no="3">唯美png</a>
                             </li>
                            <li class="nav-item"> 
-                                <a class="nav-link" href="#0" data-no="4">文档总结1</a>
+                                <a class="nav-link" href="#0" data-no="4">黄木生</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#0" data-no="5">文档总结2</a>
@@ -86,7 +86,7 @@
                             
                                 <div class="col-xs-12">
                                     <i class="fa fa-4x fa-camera tm-icon"></i>
-                                    <h2 class="tm-site-name">他是一个爱运动的小伙子</h2>
+                                    <h2 class="tm-site-name" id="cc">他是一个爱运动的小伙子</h2>
                                     <div class="tm-bg-white-translucent text-xs-left tm-textbox tm-textbox-1-col">
                                         <p class="tm-text"><a rel="nofollow"  target="_blank">职业：</a><a rel="nofollow" href="http://getbootstrap.com/" target="_blank"></a><a rel="nofollow" href="https://unsplash.com/" target="_blank"></a><a href="https://plus.google.com/+templatemo" target="_blank"></a>一位前端开发工程师</p>
                                         <p class="tm-text"><a rel="nofollow"  target="_blank">主要负责：</a>
@@ -180,11 +180,12 @@
                 <li>  <!-- class="cd-bg-video" -->
                     <div class="js-tm-page-content" data-page-no="4">
                         
-                        <div class="cd-bg-video-wrapper">
+                        <!-- <div class="cd-bg-video-wrapper"> -->
                           <div class="box1">
-                              <h1>此文档加载中...........</h1>
+                              <h1 id="bb">祝我们的黄木生老师教师节快乐</h1>
+                              <div><img src="./img/724801480991865470.jpg" alt=""></div>
                           </div>
-                        </div> <!-- .cd-bg-video-wrapper -->
+                        <!-- </div>  -->
 
                     </div>                    
 
@@ -210,10 +211,21 @@
                                             
                                             闭包的作用：
                                             因为函数内部的成员不能直接被函数外部访问和使用，那么我们就可以在函数内部创建一些函数来进行变量的操作，之后将这些操作返回给外部使用。这就是闭包。闭包就是解决在函数外部使用函数内部声明的成员问题，说白了，他就是函数内部进行 关联的桥梁。
-                                                
+                                            函数内部的成员在函数外部不能访问
                                                 
                                             线程：	JS是单线程的额，所以在执行过程时是有分主次线程，先执行主主线程在执行次要的</p>      
-                                        <p></p>
+                                        <p>git和post 的区别：1.git传送有长度限制post没有<br>2.git通过url传递在浏览器地址栏可见post是在报文中传递<br>3.post一般用于表单提交而git是用于简单的数据查询相对来说post 的安全性较高</p>
+                                        <p>原型链：1.每个构造函数都有一个原型对象，原型对象都包含一个指向构造函数的指针，而实例都包含一个指向原型对象的指针。对象有原型，而原型是对象，造成对象又有原型的的原型链，如果函数内没有他就会往上找直到找到null</p>构造函数的原型就是构造函数的对象
+                                        <p>作用域：局部作用域可以访问全局作用域，全局作用域不能访问局部作用域，全局作用域就是一对script标签  </p>	
+                                        <p>JSON:解析方便，易于读写，轻量级数据交互格式方便javascript解析</p>
+                                        <p>jsonp并不是一种数据格式，是用来解决跨域问题的解决方式是创建一个script用src属性获取js文件中的js脚本，该脚本内容是做函数调用参数就是服务器返回的数据</p>
+                                        <p>一、初识原型
+                                                在JavaScript中，原型也是一个对象，通过原型可以实现对象的属性继承，JavaScript的对象中都包含了一个”[[Prototype]]”内部属性，这个属性所对应的就是该对象的原型。
+                                                “[[Prototype]]”作为对象的内部属性，是不能被直接访问的。所以为了方便查看一个对象的原型，Firefox和Chrome中提供了__proto__这个非标准（不是所有浏览器都支持）的访问器（ECMA引入了标准对象原型访问器”Object.getPrototype(object)”）。在JavaScript的原型对象中，还包含一个”constructor”属性，这个属性对应创建所有指向该原型的实例的构造函数</p>
+                                                <p>原型链的形成真正是靠__proto__ 而非prototype,当JS引擎执行对象的方法时，先查找对象本身是否存在该方法，如果不存在，会在原型链上查找，但不会查找自身的prototype。
+                                                    一个对象的__proto__记录着自己的原型链，决定了自身的数据类型，改变__proto__就等于改变对象的数据类型。
+                                                    函数的prototype不属于自身的原型链，它是子类创建的核心，决定了子类的数据类型，是连接子类原型链的桥梁。
+                                                    在原型对象上定义方法和属性的目的是为了被子类继承和使用。</p>
                                     </div>
 
                                 </div>
@@ -255,7 +267,7 @@
 
 
         <!-- 播发音乐 -->
-        <audio autoplay src="./music/Capital Cities - Safe and Sound.mp3"></audio>
+        <audio autoplay loop src="./music/Capital Cities - Safe and Sound.mp3"></audio>
         <img class="control autoRotate" src="./img/26.png" alt="">
 
         <!-- load JS files -->
@@ -282,6 +294,27 @@
       this.classList.add('stop');
     }
   }
+  $('.tm-icon').on('click',function(){
+      alert('欢迎你的到来')
+  })
+        </script>
+        <script>
+            setInterval(function(){
+        //                    function getColor(){
+        // return "rgb("+Math.floor(Math.random() * 256)+","+Math.floor(Math.random() * 256)+","+Math.floor(Math.random() * 256)+")";
+    // }   
+    var getRandomColor = function(){ 
+
+  return '#'+('00000'+(Math.random()*0x1000000<<0).toString(16)).substr(-6); 
+}
+
+        var c = document.getElementById("bb");
+        var cc = document.getElementById("cc");
+       c.style.color =getRandomColor();
+       cc.style.color =getRandomColor();
+            },10)
+     
+
         </script>
         <script>
             function adjustHeightOfPage(pageNo) {
