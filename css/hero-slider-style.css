@@ -230,7 +230,11 @@ Single slide style
   background-image: url("../img/a.jpg");
   /*background-image: url("../assets/video-replace-mobile.jpg");*/
 }
+.cd-hero-slider li:nth-of-type(4) .box1{
+  display: flex;
+}
 .cd-hero-slider li:nth-of-type(4) .box1 h1{
+  flex: 1;
   font-size: 66px !important;
   text-align: center;
   padding-top: 388px;
@@ -519,7 +523,6 @@ Single slide animation
     transition: opacity 0.4s 0.4s, transform 0.5s 0.4s, background-color 0.2s 0s;
   }
 }
-
 /* -------------------------------- 
 
 Slider navigation
